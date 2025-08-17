@@ -1,0 +1,69 @@
+body {
+  color: white;
+}
+
+
+.form-group label {
+  display: block;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.form-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-input:focus {
+  border-color: #b10404; /* Un ROJO más claro */
+  color: rgb(56, 56, 56);
+  outline: none;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+main {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(125, 172, 43, 0.897);
+  border-radius: 10px;
+}
+
+#video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Margen o espacio encima del video*/
+}
+
+#video-section iframe {
+  width: 100%;
+  max-width: 600px; /* Ancho máximo del video */
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #ffffff; /* Borde alrededor del video */
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Alinea los elementos en columna */
+}
+
+.submit-button {
+  width: auto;
+  margin-top: 10px;
+  background-color: #d10e3e; /* Un verde más claro */
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
