@@ -1,0 +1,150 @@
+body {
+  background-image: 
+    linear-gradient(rgb(21, 59, 6), rgba(1, 87, 12, 0.411)), /* Degradado */
+    url("https://cdn.pixabay.com/photo/2020/01/07/05/11/beach-4746787_1280.jpg");  
+  
+  background-size: cover;
+  color: rgb(0, 0, 0);
+}
+
+
+.form-group label { /*descripcion de los campos, nombre de..., correo, contra...*/
+  display: block;
+  margin-left: 5px;
+  font-weight: bold;
+
+}
+
+.form-input { /*campos para llenar la informacion*/
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 0;
+  border: 800px solid #c90000;
+  border-radius: 4px;
+
+}
+
+.form-input:focus { /*barras donde insetas tu informacion*/
+  border-color: #b10404; /* Un ROJO más claro */
+  color: rgb(56, 56, 56);
+  outline: none;
+  padding: 12px; /* Aumenta el padding al hacer foco */
+
+}
+
+h1 { /*texto de vienvenida en la parte superior*/
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  
+}
+
+main { /*cuadro donde se encuentra el formulario*/
+  width: 50%;
+  margin: auto;
+  margin-top: 40px; /*Espacio de arriba del formulario para que no choque con la tabla*/
+  padding: 20px;
+  background-color: rgba(125, 172, 43, 0.897);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgb(0, 16, 27); /* Sombra alrededor del cuadro */
+}
+
+#video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Margen o espacio encima del video*/
+  
+}
+
+#video-section iframe {
+  width: 100%;
+  max-width: 600px; /* Ancho máximo del video */
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #ffffff; /* Borde alrededor del video */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Alinea los elementos en columna */
+}
+
+.submit-button {
+  width: auto;
+  margin-top: 10px;
+  background-color: #d10e3e; /* Un verde más claro */
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+/*-------------------------------------------------------*/
+
+/* Estilo para la barra de navegación superior */
+.menu-principal {
+  background-color: rgba(1, 31, 1, 0.979); /* Fondo oscuro con transparencia */
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.856);
+
+}
+
+/* Lista horizontal */
+.menu-principal ul {
+  display: flex; /* Muestra los elementos en una fila HORIZONTAL */
+  justify-content: center;/* Centra los elementos horizontalmente */
+  list-style-type: none;/* Elimina los puntos de la lista al establecer ninguno o (none) */
+  margin: 1px;/* Ajusta el margen superior de la lista */ 
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Elementos individuales */
+.menu-principal li {
+  margin: 0 auto;   /* Espacio entre los elementos */
+}
+
+/* Enlaces del menú */
+.menu-principal a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: white; /* Establece el color blanco y no el azul de un link */
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 20px; /* Espacio alrededor del texto */
+}
+
+/* Efecto de oscurecer al pasar el mouse */
+.menu-principal a:hover {
+  background-color: rgba(76, 230, 16, 0.2);
+  border-radius: 8px;
+}
+
+#video-section iframe {
+  transition: transform 0.3s ease;
+}
+
+#video-section iframe:hover {
+  transform: scale(1.02);
+}
+
+form { /*animacion apareciba del formulario*/
+  opacity: 0;
+  transform: translateY(30px);
+  animation: aparecer 0.6s ease forwards;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*REVISION DE PAGINA V2V2*/
+
